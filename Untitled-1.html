@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>my fat beautiful girlfriend</title>
+</head>
+<body>
+    <div class="center-content">
+        <div style="background-color:purple; color:white; padding:100px;">
+        <img src="chloehey.png" alt="i love my gf" id="chloe">
+        <h1 id="message">yo wsg babe</h1>
+        <h2 id="question">do you love me</h2>
+        <h3 id="finalString"></h3>
+        <button id="yes">yes</button>
+        <button id="no">no</button>
+        </div>
+    </div>
+    
+
+    <script>
+         document.getElementById("yes").addEventListener("click", function() {
+            document.getElementById("message").innerText = "heh";
+            document.getElementById("question").innerText = "I love you more ho";
+            document.getElementById("chloe").src = "chloehappy.png";
+            document.getElementById("yes").innerText = "do you wanna be my valentine heh";
+
+        });
+
+    let noClickCount = 0;
+    document.getElementById("no").addEventListener("click", function () {
+    let message = document.getElementById("message");
+    let question = document.getElementById("question");
+    let chloeImage = document.getElementById("chloe");
+    let yesButton = document.getElementById("yes");
+    noClickCount++;
+
+    if (noClickCount === 1) {
+        message.innerText = "i said press yes chigga";
+        question.innerText = "press yes chigga";
+        chloeImage.src = "chloestaring.png";
+    } else if (noClickCount === 2){
+        message.innerText = "whatever you hate me";
+        question.innerText = "i said press yes my good girl heh";
+        chloeImage.src = "annoyedchloe.png";
+    } else if(noClickCount === 3){
+        message.innerText = "please press yes i miss you babe sibguhsbguhndgrtnigtmrfj";
+        question.innerText = "so you think im a tweaker sigh i am for you heh please press yes";
+        chloeImage.src = "chloesad.png";
+        finalString.innerText = "you cant press no anymore hehehehehe";
+        document.getElementById("no").style.display = "none";
+    }
+
+
+    yesButton.innerText = "do you wanna be my valentine heh";
+});
+
+document.getElementById("yes").addEventListener("click", function () {
+    let yesButton = document.getElementById("yes");
+
+    if (yesButton.innerText === "do you wanna be my valentine heh") {
+        document.body.innerHTML = `
+            <div style="text-align: center; padding: 50px;">
+                <h1>Yippie</h1>
+                <h2> i labalbabalbalbl you so much </h2>
+                <img src="heh.png" alt="Yippie Image">
+                <img src="kissme.png" alt="Kiss Me Image">
+                <h2> kiss me chigga</h2>
+                <video width="640" height="480" controls>
+                    <source src="CHLOE.mp4" type="video/mp4">
+                </video>
+                <h2>ermm im waiting sighhhhhhhhhhhh </h2>
+                <video width="640" height="480" controls>
+                    <source src="sohappay.mp4" type="video/mp4">
+                </video>
+                <h2>sigh im exposing you</h2>
+                <video width="640" height="480" controls>
+                    <source src="tweaker.mp4" type="video/mp4">
+                </video>
+                <h2> SO WERE TWEAKING OUT LMFOAMFOAMF </h2>
+            </div>
+        `;
+    }
+});
+
+    </script>
+</body>
+</html>
